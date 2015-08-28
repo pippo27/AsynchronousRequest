@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E8485E00-AE9A-4894-BC12-C383DB3BD9BB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SampleAsyn</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4FB1BCDB7D1000D037BDFEE07941D8F50A9FF5A8</key>
+		<string>https://github.com/pippo27/AsynchronousRequest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SampleAsyn.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4FB1BCDB7D1000D037BDFEE07941D8F50A9FF5A8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pippo27/AsynchronousRequest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4FB1BCDB7D1000D037BDFEE07941D8F50A9FF5A8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4FB1BCDB7D1000D037BDFEE07941D8F50A9FF5A8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AsynchronousRequest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
