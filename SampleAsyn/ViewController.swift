@@ -23,18 +23,21 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     
     func loadData(){
-        let url = NSURL(string: "https://itunes.apple.com/search?term=Beatles&media=music&entity=album")
+        let search = "Beatles"
+        let url = NSURL(string: "https://itunes.apple.com/search?term=\(search)&media=music&entity=album")
         let request = NSURLRequest(URL: url!)
         
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue()) { [weak self] response, data, error in
-            
-            
+            //Response Error
             if(error != nil) {
                 
                 println(error.localizedDescription)
+                return;
             }
+            
             var err: NSError?
             var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as! NSDictionary
+            //Json error
             if(err != nil) {
                 
                 println("JSON Error \(err!.localizedDescription)")
@@ -46,18 +49,17 @@ class ViewController: UIViewController, UITableViewDataSource {
             for dic in results{
                 print(dic)
                 let imageURL = dic["artworkUrl100"] as? String ?? ""
-                self?.data.append(imageURL);
+                self?.data.append(imageURL);  //ในตัวอย่างนี้ อ่าน url รูปอัลบั้มเพลง
                 
             }
             
             
-            //สนใจแค่ข้างล่างนี้นะครับ 
+            //สนใจแค่ข้างล่างนี้นะครับ
             dispatch_async(dispatch_get_main_queue(), {
-                    self?.tableView.reloadData()
+                self?.tableView.reloadData()
             })
         }
     }
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
